@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-      apiKey: "AIzaSyAvGNKO4UUUeiL-ahwN0O0T80t_geox9jU",
-      databaseURL: "https://kwitter-277d2-default-rtdb.firebaseio.com/",
-      authDomain: "kwitter-277d2.firebaseapp.com",
-      projectId: "kwitter-277d2",
-      storageBucket: "kwitter-277d2.appspot.com",
-      messagingSenderId: "683070005634",
-      appId: "1:683070005634:web:5a202fa50a9ddc2521af9b"
+      apiKey: "AIzaSyDVRKLg7bLPcdVjlvxs312MG6uGCzL61xQ",
+      authDomain: "let-s-chat-web-app-3fd60.firebaseapp.com",
+      databaseURL: "https://let-s-chat-web-app-3fd60-default-rtdb.firebaseio.com",
+      projectId: "let-s-chat-web-app-3fd60",
+      storageBucket: "let-s-chat-web-app-3fd60.appspot.com",
+      messagingSenderId: "283060589902",
+      appId: "1:283060589902:web:043c6a964335f1bfeaba1f"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -37,5 +37,5 @@ function addroom(){
       firebase.database().ref("/").child(room_name).update({
             use : "add room name"      });
             localStorage.setItem("room_name" , room_name);
-            window.location = "kwitter_page.html";
+            window.location = "Kwitter_page.html";
 }
